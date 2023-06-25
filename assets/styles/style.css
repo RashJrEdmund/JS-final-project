@@ -65,6 +65,7 @@ html {
 
 .txt-input::placeholder {
   color: #808080;
+}
 
 #whole {
   align-items: center;

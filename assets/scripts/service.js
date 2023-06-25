@@ -1,25 +1,25 @@
 const createRegister = (arrofRegister) => {
-  const form = document.createElement("form");
-  const title = document.createElement("p");
-  const headerInputs = document.createElement("div");
+  const form = document.createElement('form')
+  const title = document.createElement('p')
+  const headerInputs = document.createElement('div')
 
   // assining attributes
 
-  form.id = "cash-register";
-  title.className = "title";
-  headerInputs.className = "form-row";
+  form.id = 'cash-register'
+  title.className = 'title'
+  headerInputs.className = 'form-row'
 
   // setting innerHtml
-  title.innerHTML = "Cash Register";
+  title.innerHTML = 'Cash Register'
   headerInputs.innerHTML = `
     <label for="price">Total bill:</label>
     <input type="text" class="txt-input" id="cash" autocomplete="off" placeholder="How much he's given" />
     <label for="cash">Payment Note:</label>
     <input type="text" class="txt-input" id="price" autocomplete="off" placeholder="Actual price"/>
-  `;
+  `
 
-  form.appendChild(title);
-  form.appendChild(headerInputs);
+  form.appendChild(title)
+  form.appendChild(headerInputs)
 
   form.innerHTML += `
     <div class="form-row">
@@ -141,9 +141,9 @@ const createRegister = (arrofRegister) => {
     <button id="submit-btn" class="calulate">Get change</button>
     <button id="reset-btn" class="reset">Clear</button>
     </div>
-`;
+`
 
-  document.getElementById("whole").appendChild(form);
-};
+  document.getElementById('whole').appendChild(form)
+}
 
-export default createRegister;
+export default createRegister

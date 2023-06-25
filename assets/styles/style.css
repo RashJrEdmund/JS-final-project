@@ -63,6 +63,9 @@ html {
   border: 1px solid #008000;
 }
 
+.txt-input::placeholder {
+  color: #808080;
+
 #whole {
   align-items: center;
   display: flex;

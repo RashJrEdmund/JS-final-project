@@ -12,10 +12,10 @@
       <form action="" id="cash-register">
         <p class="title">Cash Register</p>
         <div class="form-row">
-          <label for="price">Price:</label>
-          <input type="text" class="txt-input" id="price" autocomplete="off" />
-          <label for="cash">Cash:</label>
-          <input type="text" class="txt-input" id="cash" autocomplete="off" />
+          <label for="price">Total bill:</label>
+          <input type="text" class="txt-input" id="price" autocomplete="off" placeholder="How much he's given"/>
+          <label for="cash">Payment Note:</label>
+          <input type="text" class="txt-input" id="cash" autocomplete="off" placeholder="Actual price" />
         </div>
         <div class="form-row">
           <label for="one-hundred">One Hundred :</label>
@@ -115,7 +115,7 @@
           />
         </div>
         <div class="form-row">
-          <label for="penny">Penny ;</label>
+          <label for="penny">Penny :</label>
           <input
             type="text"
             class="txt-input"
@@ -128,12 +128,12 @@
         </div>
 
         <div class="result-container">
-          <p>result :</p>
-          <div id="result">100</div>
+          <p>Result :</p>
+          <div id="result"></div>
         </div>
 
         <div class="cta">
-          <button id="submit-btn" class="calulate">Compute</button>
+          <button id="submit-btn" class="calulate">Get change</button>
           <button id="reset-btn" class="reset">Clear</button>
         </div>
       </form>
